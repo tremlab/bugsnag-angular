@@ -20,7 +20,7 @@ export class AppComponent {
   }
   triggerHandledError() {
     this.doAHandledError = true;
-  //  BugsnagErrorHandler.notify(new Error('Something broke!'));
+    bugsnagClient.notify(new Error('Something broke!'));
     setTimeout(function () {
     this.doAHandledError = false;
     }.bind(this), 1000);

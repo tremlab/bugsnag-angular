@@ -31,7 +31,7 @@ API token with your own!
     ```sh
     yarn
     ```
-1. Replace the `API_KEY` placeholder in [app.module.ts](src/app/app.module.ts) with your actual API key.
+1. Replace the `API_KEY` placeholder in [bugsnag.ts](src/app/bugsnag.ts) with your actual API key.
 1. Build the application and start the development web server:
     ```sh
     ng serve
