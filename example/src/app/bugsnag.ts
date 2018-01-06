@@ -18,10 +18,10 @@ const bugsnagClient = bugsnag({
   // because this is a demo app, below extends the default of 10 notifications per pageload. click away!
   maxEvents: 50,
 
-  // one of the most powerful tools in our library, beforeSend lets you evaluate, modify, add and remove data before sending to bugsnag. The actions here will be applied to *all* errors, handled and unhandled.
+  // one of the most powerful tools in our library, beforeSend lets you evaluate, modify, add and remove data on an error right before it is sent to bugsnag. The actions here will be applied to *all* errors, handled and unhandled.
   beforeSend: function (report) {
     report.user = {
-      name: "Katherine Joshnson",
+      name: "Katherine Johnson",
       email: "kj@nasa.gov",
       id: "0112358"
     }

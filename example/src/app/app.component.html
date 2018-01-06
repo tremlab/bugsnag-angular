@@ -1,7 +1,12 @@
 <button (click)="triggerRenderError()">UNHANDLED RENDER ERROR</button>
-<div *ngIf="doARenderError">unhandled exception sent</div>
-<div *ngIf="doARenderError">{{ doARenderError.non.existent.property }}</div>
+  <div *ngIf="doARenderError">unhandled exception sent</div>
+  <!-- when true, the below line will throw an unhandled exception. -->
+  <div *ngIf="doARenderError">{{ doARenderError.non.existent.property }}</div>
+
 <br>
+
 <button (click)="triggerHandledError()">HANDLED ERROR</button>
-<div *ngIf="doAHandledError">handled exception sent</div>
-<div *ngIf="doAHandledError">{{ doARenderError.non.existent.property }}</div>
+  <div *ngIf="doAHandledError">handled exception sent</div>
+
+
+<!-- take a look at app.component.ts to see what each button triggers.  -->
